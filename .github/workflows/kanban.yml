@@ -1,0 +1,13 @@
+name: Kanban automation
+
+on:
+  issues:
+    types: [opened, closed]
+
+jobs:
+  kanban:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: GitHub Kanban
+        uses: Serchinastico/github-kanban-action@v0.1.2
